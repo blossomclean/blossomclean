@@ -5,6 +5,6 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-# Serif - A Hugo Business Theme.
+# Buyback time to do awesome things!
 
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+Do what you love the most and leave the regular errands to us. Affordable cleaning service (***AUD 25 per hour + 10% GST***) provider with all the necessary checks (***Police check, WWCC, Work rights, References, Public liability insurance, Experienced***) done for the peace of mind.
