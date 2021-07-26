@@ -5,9 +5,10 @@ featured: true
 weight: 1
 ---
 
-Financial accounting (or financial accountancy) is the field of accounting concerned with the **summary, analysis and reporting** of financial transactions related to a business.
+For the peace of mind and priority service, book your housemaid for regular clean with the flexibility to choose from the tasks to be done
 
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
+
+
 
 # Objectives 
 

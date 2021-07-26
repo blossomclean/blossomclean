@@ -6,9 +6,9 @@ draft: false
 weight: 5
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+Super confident about what it takes to get your bond money back but at the same time we would like you to be confident 
+about asking the full refund of your hard-earned bond money. To be completely transparent, we offer hourly cleaning 
+service with the track record of so many end of lease cleanings where you give sign-offs on the clean and claim back the bond money
 
 ## Ne verba patulosque numen vix libet
 

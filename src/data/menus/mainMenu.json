@@ -5,8 +5,8 @@
         "weight": 2
     },
     {
-        "name": "Team",
-        "url": "/team/",
+        "name": "Join",
+        "url": "/join/",
         "weight": 3
     },
     {

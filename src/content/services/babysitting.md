@@ -6,11 +6,8 @@ draft: false
 weight: 3
 ---
 
-Cyanee nec pedicis positi. Esse et diem forte quoque et ieiunia
-vixque dixit negari _ullis stamina_: trahit. Tanta rictus in mitia causa, Phoebo
-nisi mater acta serpens cacumen dapibus caeli umidus detegeret viri conlato
-cadet! [Ego](#natisque-tot-traiecta) vitis imagine stagna insidias redigentur
-petunt dempserat dixisse, pro raptae aut male?
+We know it is hard to juggle family and work responsibilities every day and every now & then you deserve some sort of break from that 
+but before passing on the responsibility to care for your kids you would like to ensure that they are in safe hands and there we come to the rescue
 
 - Dente reponere dixere referre excessitque seque
 - Tacui si cui inde haec ubi trepidas

@@ -4,14 +4,14 @@ import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Call from '../components/Call';
 
-const Team = props => {
-  const team = props.data.team.edges;
+const Join = props => {
+  const join = props.data.join.edges;
   const { intro } = props.data;
   const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'} ${intro.frontmatter.intro_image_hide_on_mobile && 'intro-image-hide-mobile'}`;
 
   return (
-    <Layout bodyClass="page-teams">
-      <SEO title="Team" />
+    <Layout bodyClass="page-joins">
+      <SEO title="Join" />
 
       <div className="intro">
         <div className="container">
@@ -30,22 +30,22 @@ const Team = props => {
 
       <div className="container">
         <div className="row">
-          {team.filter(edge => (edge.node.frontmatter.promoted)).map(({ node }) => (
+          {join.filter(edge => (edge.node.frontmatter.promoted)).map(({ node }) => (
             <div key={node.id} className="col-12 col-md-6 mb-2">
-              <div className="team team-summary team-summary-large">
+              <div className="join join-summary join-summary-large">
                 {node.frontmatter.image && (
-                  <div className="team-image">
+                  <div className="join-image">
                     <img alt={`photo of ${node.frontmatter.title}`} className="img-fluid mb-2" src={node.frontmatter.image} />
                   </div>
                 )}
-                <div className="team-meta">
-                  <h2 className="team-name">{node.frontmatter.title}</h2>
-                  <p className="team-description">{node.frontmatter.jobtitle}</p>
+                <div className="join-meta">
+                  <h2 className="join-name">{node.frontmatter.title}</h2>
+                  <p className="join-description">{node.frontmatter.jobtitle}</p>
                   {node.frontmatter.linkedin && (
                     <a target="_blank" href="{{ .Params.Linkedinurl }}">LinkedIn</a>
                   )}
                 </div>
-                <div className="team-content">
+                <div className="join-content">
                   <p>{node.excerpt}</p>
                 </div>
               </div>
@@ -53,17 +53,17 @@ const Team = props => {
           ))}
         </div>
         <div className="row pt-6 pb-6">
-          {team.filter(edge => (!edge.node.frontmatter.promoted)).map(({ node }) => (
+          {join.filter(edge => (!edge.node.frontmatter.promoted)).map(({ node }) => (
             <div key={node.id} className="col-12 col-md-6 mb-2">
-              <div className="team team-summary">
+              <div className="join join-summary">
                 {node.frontmatter.image && (
-                  <div className="team-image">
+                  <div className="join-image">
                     <img alt={`photo of ${node.frontmatter.title}`} className="img-fluid mb-2" src={node.frontmatter.image} />
                   </div>
                 )}
-                <div className="team-meta">
-                  <h2 className="team-name">{node.frontmatter.title}</h2>
-                  <p className="team-description">{node.frontmatter.jobtitle}</p>
+                <div className="join-meta">
+                  <h2 className="join-name">{node.frontmatter.title}</h2>
+                  <p className="join-description">{node.frontmatter.jobtitle}</p>
                   {node.frontmatter.linkedin && (
                     <a target="_blank" href="{{ .Params.Linkedinurl }}">LinkedIn</a>
                   )}
@@ -79,9 +79,9 @@ const Team = props => {
 };
 
 export const query = graphql`
-  query TeamQuery {
-    team: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/team\/.*/" } }
+  query JoinQuery {
+    join: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/join\/.*/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -101,7 +101,7 @@ export const query = graphql`
         }
       }
     }
-    intro: markdownRemark(fileAbsolutePath: {regex: "/(team.md)/"}) {
+    intro: markdownRemark(fileAbsolutePath: {regex: "/(join.md)/"}) {
       html
       frontmatter {
         image
@@ -114,4 +114,4 @@ export const query = graphql`
   }
 `;
 
-export default Team;
+export default Join;

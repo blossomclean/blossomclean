@@ -27,7 +27,7 @@ const Services = props => {
         </div>
       </div>
 
-      <div className="container pb-6">
+      <div className="container pt-6 pb-6">
         <div className="row">
           {services.map(edge => (
             <div key={edge.node.id} className="col-12 col-md-4 mb-1">

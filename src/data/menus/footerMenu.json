@@ -1,12 +1,22 @@
 [
     {
-        "name": "Home",
-        "url": "/",
+        "name": "Services",
+        "url": "/services/",
         "weight": 1
+    },
+    {
+        "name": "Join",
+        "url": "/join/",
+        "weight": 2
+    },
+    {
+        "name": "About",
+        "url": "/about/",
+        "weight": 3
     },
     {
         "name": "Contact",
         "url": "/contact/",
-        "weight": 2
+        "weight": 4
     }
 ]

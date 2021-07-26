@@ -13,14 +13,12 @@
         "meta_og_title": "Blossom Clean - Buyback time to do awesome things!",
         "meta_og_type": "website",
         "meta_og_url": "https://blossomclean.com.au",
-        "meta_og_image": "https://raw.githubusercontent.com/JugglerX/hugo-gatsby-theme/master/images/tn.png",
-        "meta_og_description": "Cleaning service provider",
-        "meta_twitter_card": "summary",
-        "meta_twitter_site": "@zerostaticio",
-        "meta_twitter_creator": "@zerostaticio"
+        "meta_og_image": "/images/logo/logo.svg",
+        "meta_og_description": "Affordable cleaning service provider"
     },
     "footer": {
-        "copyright_text": "Copyright 2021. All rights reserved.",
+        "copyright_text": "Copyright ",
+        "rights": "All rights reserved.",
         "copyright_link": "https://www.blossomclean.com.au"
     }
 }
