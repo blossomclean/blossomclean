@@ -1,22 +1,22 @@
 [
     {
-        "name": "Services",
-        "url": "/services/",
+        "name": "FAQs",
+        "url": "/faqs/",
         "weight": 1
     },
     {
-        "name": "Join",
-        "url": "/join/",
+        "name": "Privacy",
+        "url": "/privacy/",
         "weight": 2
     },
     {
-        "name": "About",
-        "url": "/about/",
+        "name": "Legal",
+        "url": "/legal/",
         "weight": 3
     },
     {
-        "name": "Contact",
-        "url": "/contact/",
+        "name": "Cancellation",
+        "url": "/cancellation/",
         "weight": 4
     }
 ]

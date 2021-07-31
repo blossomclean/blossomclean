@@ -73,15 +73,15 @@
          id="text2037"
          y="44.943443"
          x="84.421249"
-         style="font-style:normal;font-weight:normal;font-size:7.27845px;line-height:1.25;font-family:sans-serif;inline-size:256.725;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.181961"
+         style="font-style:normal;font-weight:bold;font-size:7.27845px;line-height:1.25;font-family:'Playfair Display', serif, -apple-system;inline-size:256.725;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.181961"
          xml:space="preserve"><tspan
            sodipodi:role="line"
            x="84.421249"
            y="44.943443"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.7px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#008080;stroke-width:0.181961">Blossom Clean</tspan></tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.7px;font-family:'Playfair Display', serif, -apple-system;-inkscape-font-specification:'sans-serif Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#008080;stroke-width:0.181961">Blossom Clean</tspan></tspan></text>
     </g>
     <text
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect2041);fill:#000000;fill-opacity:1;stroke:none;"
+       style="font-style:normal;font-weight:bold;font-size:40px;line-height:1.25;font-family:'Playfair Display', serif, -apple-system;white-space:pre;shape-inside:url(#rect2041);fill:#000000;fill-opacity:1;stroke:none;"
        id="text2039"
        xml:space="preserve"><tspan
          sodipodi:role="line"
@@ -93,7 +93,7 @@
        id="text2047"
        y="25.039175"
        x="188.33813"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;inline-size:109.75;fill:#008000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-weight:bold;font-size:40px;line-height:1.25;font-family:'Playfair Display', serif, -apple-system;inline-size:109.75;fill:#008000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          sodipodi:role="line"
          style="visibility:hidden"

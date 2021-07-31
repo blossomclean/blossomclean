@@ -7,7 +7,6 @@ import Call from '../components/Call';
 const Join = props => {
   const join = props.data.join.edges;
   const { intro } = props.data;
-  const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'} ${intro.frontmatter.intro_image_hide_on_mobile && 'intro-image-hide-mobile'}`;
 
   return (
     <Layout bodyClass="page-joins">
@@ -16,64 +15,12 @@ const Join = props => {
       <div className="intro">
         <div className="container">
           <div className="row justify-content-start">
-            <div className="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+            <div className="col-12 order-2 order-md-1">
               <div dangerouslySetInnerHTML={{ __html: intro.html }} />
             </div>
-            {intro.frontmatter.intro_image && (
-              <div className="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-                <img alt={intro.frontmatter.title} className={introImageClasses} src={intro.frontmatter.intro_image} />
-              </div>
-            )}
           </div>
         </div>
       </div>
-
-      <div className="container">
-        <div className="row">
-          {join.filter(edge => (edge.node.frontmatter.promoted)).map(({ node }) => (
-            <div key={node.id} className="col-12 col-md-6 mb-2">
-              <div className="join join-summary join-summary-large">
-                {node.frontmatter.image && (
-                  <div className="join-image">
-                    <img alt={`photo of ${node.frontmatter.title}`} className="img-fluid mb-2" src={node.frontmatter.image} />
-                  </div>
-                )}
-                <div className="join-meta">
-                  <h2 className="join-name">{node.frontmatter.title}</h2>
-                  <p className="join-description">{node.frontmatter.jobtitle}</p>
-                  {node.frontmatter.linkedin && (
-                    <a target="_blank" href="{{ .Params.Linkedinurl }}">LinkedIn</a>
-                  )}
-                </div>
-                <div className="join-content">
-                  <p>{node.excerpt}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="row pt-6 pb-6">
-          {join.filter(edge => (!edge.node.frontmatter.promoted)).map(({ node }) => (
-            <div key={node.id} className="col-12 col-md-6 mb-2">
-              <div className="join join-summary">
-                {node.frontmatter.image && (
-                  <div className="join-image">
-                    <img alt={`photo of ${node.frontmatter.title}`} className="img-fluid mb-2" src={node.frontmatter.image} />
-                  </div>
-                )}
-                <div className="join-meta">
-                  <h2 className="join-name">{node.frontmatter.title}</h2>
-                  <p className="join-description">{node.frontmatter.jobtitle}</p>
-                  {node.frontmatter.linkedin && (
-                    <a target="_blank" href="{{ .Params.Linkedinurl }}">LinkedIn</a>
-                  )}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
     </Layout>
   );
 };
@@ -91,25 +38,11 @@ export const query = graphql`
           fields {
             slug
           }
-          frontmatter {
-            title
-            promoted
-            image
-            jobtitle
-            linkedinurl
-          }
         }
       }
     }
     intro: markdownRemark(fileAbsolutePath: {regex: "/(join.md)/"}) {
       html
-      frontmatter {
-        image
-        intro_image
-        intro_image_absolute
-        intro_image_hide_on_mobile
-        title
-      }
     }
   }
 `;

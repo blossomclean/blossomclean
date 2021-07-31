@@ -55,6 +55,10 @@ $sub-footer-text-color: $white;
 // Pages
 @import 'pages/home';
 @import 'pages/join/join-summary';
+@import 'pages/faqs/faqs-summary';
+@import 'pages/legal/legal-summary';
+@import 'pages/privacy/privacy-summary';
+@import 'pages/cancellation/cancellation-summary';
 @import 'pages/services/page-services-single';
 
 body {
