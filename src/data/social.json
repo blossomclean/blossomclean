@@ -8,5 +8,10 @@
         "name": "Facebook",
         "link": "https://www.facebook.com/blossomclean",
         "image": "/images/social/facebook.svg"
+    },
+    {
+        "name": "Whatsapp",
+        "link": "https://api.whatsapp.com/send?phone=61450138487",
+        "image": "/images/social/whatsapp.svg"
     }
 ]
