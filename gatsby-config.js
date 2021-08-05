@@ -3,7 +3,7 @@ const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
 module.exports = {
   siteMetadata: {
     title: 'Blossom Clean',
-    description: 'Affordable cleaning service provider'
+    description: 'Affordable cleaning services provider'
   },
   plugins: [
     'gatsby-plugin-sass',

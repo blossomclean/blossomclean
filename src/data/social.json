@@ -1,12 +1,17 @@
 [
     {
         "name": "Github",
-        "link": "https://github.com/JugglerX/hugo-serif-theme",
+        "link": "https://github.com/blossomclean/blossomclean-web",
         "image": "/images/social/github.svg"
     },
     {
         "name": "Facebook",
         "link": "https://www.facebook.com/blossomclean",
         "image": "/images/social/facebook.svg"
+    },
+    {
+        "name": "Whatsapp",
+        "link": "https://api.whatsapp.com/send?phone=61450138487",
+        "image": "/images/social/whatsapp.svg"
     }
 ]

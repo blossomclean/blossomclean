@@ -1,12 +1,22 @@
 [
     {
-        "name": "Home",
-        "url": "/",
+        "name": "FAQs",
+        "url": "/faqs/",
         "weight": 1
     },
     {
-        "name": "Contact",
-        "url": "/contact/",
+        "name": "Privacy",
+        "url": "/privacy/",
         "weight": 2
+    },
+    {
+        "name": "Legal",
+        "url": "/legal/",
+        "weight": 3
+    },
+    {
+        "name": "Cancellation",
+        "url": "/cancellation/",
+        "weight": 4
     }
 ]

@@ -2,41 +2,41 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   overflow: hidden;
   @include media-breakpoint-up(md) {
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   h1 {
-    color: $black;
+    color: $primary;
     font-size: 42px;
     font-weight: bold;
     line-height: 1.2;
     @include media-breakpoint-up(md) {
-      width: 80%;
-      font-size: 48px;
+      width: 92%;
+      font-size: 28px;
     }
     @include media-breakpoint-up(lg) {
-      font-size: 50px;
+      font-size: 28px;
     }
   }
   h2 {
-    width: 80%;
-    font-size: 1.2rem;
+    width: 90%;
+    font-size: 1.1rem;
     line-height: 1.4;
     margin-bottom: 30px;
     color: $black;
     font-family: $font-family-base;
   }
   p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: light;
     line-height: 1.5;
     color: $steel;
     @include media-breakpoint-up(md) {
-      width: 80%;
+      width: 90%;
     }
   }
 }

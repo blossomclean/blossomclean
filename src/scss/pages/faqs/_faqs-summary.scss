@@ -1,0 +1,30 @@
+.faqs-summary {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  .faqs-meta {
+    flex: 1;
+    h2 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: normal;
+    }
+    p {
+      color: $black;
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+  .faqs-content {
+    margin-top: 20px;
+    flex: 1 0 100%;
+  }
+}
+
+.faqs-summary-large {
+  background-color: $white-offset;
+  padding: 30px;
+  border-radius: 3px;
+}

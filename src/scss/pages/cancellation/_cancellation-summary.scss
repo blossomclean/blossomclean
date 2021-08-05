@@ -1,0 +1,30 @@
+.cancellation-summary {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  .cancellation-meta {
+    flex: 1;
+    h2 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: normal;
+    }
+    p {
+      color: $black;
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+  .cancellation-content {
+    margin-top: 20px;
+    flex: 1 0 100%;
+  }
+}
+
+.cancellation-summary-large {
+  background-color: $white-offset;
+  padding: 30px;
+  border-radius: 3px;
+}

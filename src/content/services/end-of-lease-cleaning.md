@@ -6,48 +6,20 @@ draft: false
 weight: 5
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+Super confident about what it takes to get your bond money back but at the same time we would like you to be confident 
+about asking the full refund of your hard-earned bond money from your real estate agent. 
+To be completely transparent, we offer hourly cleaning service with the track record of so many end-of-lease cleanings where clients received they bond money back.
 
-## Ne verba patulosque numen vix libet
+## How does it work?
+Following the checklist provided by your property manager, you have two options to choose from:
 
-Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
-Ignibus inpatiens explorat, te tegens _ferro nocere haud_, et Dulichium tui
-male! Quo sed [fuit flexit et](#vexant-achivi) hic die solido, gloria?
+###Option 1. Manage the tasks by yourself
+   - Choose from the task list, whatever you would like to do it by yourself
+   - Assign the tasks to the cleaner which you are not confident of doing by yourself
+   - Give sign-off when the tasks are done, before the cleaner leaves the premise
+   - This will be an hourly service in which all products and equipment will be provided by yourself
 
-1. Cum det dixit Parcarum qui spemque est
-2. Exit ex huic
-3. Quod consiste agitataque claustraque vicina videt lacertis
-4. Loquor videt
-5. Ardua non igne caelesti coniugis cognovi diversorum
-6. Per nunc pariterque saeva vindicet
-
-Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco _vati_
-dabant deus. Memorata haberet sepulcrales gentisque dum sic, in flumina templa!
-Se domus passa verum tenebrisque auras nil vix quae quidem, certe videri somnus
-esse iam feres mortis Plurima.
-
-## Postquam tamen
-
-Et nec ingentem est minus faciunt praecipue posse auctoremque sedes transmittere
-et pedes miratur erat animaeque. Tellus admonuit humanam funes, sagittis et
-licet! Inserui quamvis Clymeni.
-
-- Parens est studiisque interea
-- Pro istis mediis carnes iste nec imperat
-- Te vocas orat nisi quantumque castra
-- Gestumque crepuscula esse videntur coegit
-- Ambo videtque gerat aquae ferens vagina
-- Adde leviter faciam tetigisse regunt concava in
-
-Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de
-incubat hostes montibus, de moderato efficiet vulnere. Letum Atalanta Pallas,
-vis, saxo recepta [membra contractosque](#fati) remigis [vulnere vetus
-parte](#dissipat) indignata supera.
-
-Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane
-iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem
-et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter
-somnus, fortius ante ille. Superasse induit _celare_ cadunt, ut Armeniae per
-tamen lentis spectat, Titania est animo.
+###Option 2. We manage the tasks for you
+   - Provide us the real estate agent's checklist with some images giving us info about the condition of the property
+   - We will estimate and share a quote with you that will include all products and equipment provided by us
+   - Once the job is done, before we leave the premise, you need to give us the sign off that you are happy with the job done

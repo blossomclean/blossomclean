@@ -8,11 +8,14 @@ const SubFooter = props => {
       configJson {
         footer {
           copyright_text
+          rights
           copyright_link
         }
       }
     }
   `);
+  const date = new Date();
+  const year = date.getFullYear();
   return (
     <div className="sub-footer">
       <div className="container">
@@ -22,6 +25,8 @@ const SubFooter = props => {
               <Social />
               <div className="copyright">
                 <span>{data.configJson.footer.copyright_text}</span>
+                <span>{year}.</span>
+                <span>{data.configJson.footer.rights}</span>
                 {data.configJson.footer.copyright_link && (
                   <a href={data.configJson.footer.copyright_link}>{data.configJson.footer.copyright_link}</a>
                 )}

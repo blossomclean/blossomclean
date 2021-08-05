@@ -1,51 +1,18 @@
 ---
 path: '/about'
-title: 'About'
+title: 'About Us'
 date: 2018-02-22T17:01:34+07:00
 ---
+My life as a common housewife, with two school going girls, was filled with plenty of time to utilise until my children came back from school and it was back to being a mom. Although, this ongoing cycle of tedious living gradually developed into a passion to explore and so, I decided to take casual teaching jobs. However, this soon led to chaos leaving the family clueless about what to do next. Frankly, this was not an ideal situation for the family and another idea was needed to best utilise my time while coming together as my job of being a wife and a mother. An idea, where I can enjoy flexible timing, can handle work-life balance better, and at the same time it is easy to start-up.
 
-Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+After careful consideration, it came to my notice that my struggle was common amongst other women. They wished for someone give them a hand for house-hold duties but at an affordable cost. Although, who will be available, who can give a hand, and at what cost? A few open questions and my journey started to find the answers to these questions began in the form of a start-up.
 
-## Ne verba patulosque numen vix libet
+Gradually, I found a way into the cleaning/housekeeping industry. Why not I thought, this business reached out to whomsoever has time to spend and needed money. Be it overseas students, other housewives or anyone who desperately needs work. I felt that I was the connection between housewives needing a helping hand and cleaners needing jobs. My bonus was to know more about a few wonderful souls and create a difference in their lives’ and at the same time, mine.
 
-Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
-Ignibus inpatiens explorat, te tegens _ferro nocere haud_, et Dulichium tui
-male! Quo sed [fuit flexit et](#vexant-achivi) hic die solido, gloria?
+Over the last **3 years**, I have served more than **1000** clients with the help of more than **50** sub-contractors (few of them are still around). Since my business started in **November 2017**, this firm is consistently exceeding **200K** as annual revenue for the **last 2 years**, which is phenomenal considering Covid, and we are just entering into our growth phase.
 
-1. Cum det dixit Parcarum qui spemque est
-2. Exit ex huic
-3. Quod consiste agitataque claustraque vicina videt lacertis
-4. Loquor videt
-5. Ardua non igne caelesti coniugis cognovi diversorum
-6. Per nunc pariterque saeva vindicet
+Now, I would like to scale up the business and help other housewives who wants to do something like what I did and succeed. So, I engaged an IT company to build a platform where anyone can replicate my business model and achieve similar results without the hard work I went through and manage intricacies of operations. This platform will help in building a website per new business (I did everything from a Facebook page), connecting to a booking management, payments management and more.
 
-Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco _vati_
-dabant deus. Memorata haberet sepulcrales gentisque dum sic, in flumina templa!
-Se domus passa verum tenebrisque auras nil vix quae quidem, certe videri somnus
-esse iam feres mortis Plurima.
+Overall, the **mission** is to offer a platform to all who have time to spend and want money to earn either as providing cleaning/domestic help services by themselves or helping other clients/cleaners to connect.
 
-## Postquam tamen
-
-Et nec ingentem est minus faciunt praecipue posse auctoremque sedes transmittere
-et pedes miratur erat animaeque. Tellus admonuit humanam funes, sagittis et
-licet! Inserui quamvis Clymeni.
-
-- Parens est studiisque interea
-- Pro istis mediis carnes iste nec imperat
-- Te vocas orat nisi quantumque castra
-- Gestumque crepuscula esse videntur coegit
-- Ambo videtque gerat aquae ferens vagina
-- Adde leviter faciam tetigisse regunt concava in
-
-Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de
-incubat hostes montibus, de moderato efficiet vulnere. Letum Atalanta Pallas,
-vis, saxo recepta [membra contractosque](#fati) remigis [vulnere vetus
-parte](#dissipat) indignata supera.
-
-Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane
-iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem
-et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter
-somnus, fortius ante ille. Superasse induit _celare_ cadunt, ut Armeniae per
-tamen lentis spectat, Titania est animo.
+Our longer term **vision** is to help every household around the world using our platform either as client, sub-contractor, or business manager.
