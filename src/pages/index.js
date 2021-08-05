@@ -73,7 +73,7 @@ const Home = props => {
                   <div className="feature">
                     {node.image && (
                       <div className="feature-image">
-                        <img src={node.image} />
+                        <img alt={node.title} src={node.image} />
                       </div>
                     )}
                     <h2 className="feature-title">{node.title}</h2>
