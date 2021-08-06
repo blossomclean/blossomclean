@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.1-dev (ddb55ca, 2020-02-02)"
-   sodipodi:docname="logo.svg"
-   id="svg1980"
+   width="206.65433"
+   height="23.29142"
+   viewBox="0 0 206.65433 23.29142"
    version="1.1"
-   viewBox="0 0 264 64"
-   height="64px"
-   width="264px">
+   id="svg1980"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.1-dev (ddb55ca, 2020-02-02)">
   <metadata
      id="metadata1986">
     <rdf:RDF>
@@ -29,76 +29,66 @@
   <defs
      id="defs1984">
     <rect
-       id="rect2041"
-       height="40.824742"
-       width="91.991753"
+       x="167.65361"
        y="16.329897"
-       x="167.65361" />
+       width="91.991753"
+       height="40.824741"
+       id="rect2041" />
   </defs>
   <sodipodi:namedview
-     inkscape:snap-global="false"
-     inkscape:current-layer="logo"
-     inkscape:window-maximized="0"
-     inkscape:window-y="25"
-     inkscape:window-x="0"
-     inkscape:cy="32"
-     inkscape:cx="145.93594"
-     inkscape:zoom="1.8371212"
-     showgrid="false"
-     id="namedview1982"
-     inkscape:window-height="691"
-     inkscape:window-width="1327"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
+     pagecolor="#ffffff"
      bordercolor="#1e7868"
-     pagecolor="#ffffff" />
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1327"
+     inkscape:window-height="691"
+     id="namedview1982"
+     showgrid="false"
+     inkscape:zoom="1.8371212"
+     inkscape:cx="141.09714"
+     inkscape:cy="4.1669587"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Page-1"
+     inkscape:snap-global="false" />
   <title
      id="title1974">logo</title>
   <g
-     fill-rule="evenodd"
-     fill="none"
-     stroke-width="1"
+     transform="translate(-4.8387994,-27.833041)"
+     id="Page-1"
      stroke="none"
-     id="Page-1">
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd">
     <g
-       transform="matrix(4.1092396,0,0,4.7932248,-313.19107,-180.46951)"
+       id="logo"
        fill-rule="nonzero"
-       id="logo">
+       transform="matrix(3.9935305,0,0,3.4185564,-316.40295,-110.94399)">
       <text
-         transform="scale(0.95078277,1.051765)"
-         id="text2037"
-         y="44.943443"
+         xml:space="preserve"
+         style="font-style:normal;font-weight:bold;font-size:7.27845px;line-height:1.25;font-family:'Playfair Display', serif, '-apple-system';inline-size:256.725;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.181961"
          x="84.421249"
-         style="font-style:normal;font-weight:bold;font-size:7.27845px;line-height:1.25;font-family:'Playfair Display', serif, -apple-system;inline-size:256.725;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.181961"
-         xml:space="preserve"><tspan
+         y="44.943443"
+         id="text2037"
+         transform="scale(0.95078277,1.051765)"><tspan
            sodipodi:role="line"
            x="84.421249"
            y="44.943443"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.7px;font-family:'Playfair Display', serif, -apple-system;-inkscape-font-specification:'sans-serif Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#008080;stroke-width:0.181961">Blossom Clean</tspan></tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.7px;font-family:'Playfair Display', serif, '-apple-system';-inkscape-font-specification:'sans-serif Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#008080;stroke-width:0.181961">Blossom Clean</tspan></tspan></text>
     </g>
     <text
-       style="font-style:normal;font-weight:bold;font-size:40px;line-height:1.25;font-family:'Playfair Display', serif, -apple-system;white-space:pre;shape-inside:url(#rect2041);fill:#000000;fill-opacity:1;stroke:none;"
+       xml:space="preserve"
        id="text2039"
-       xml:space="preserve"><tspan
+       style="font-style:normal;font-weight:bold;font-size:40px;line-height:1.25;font-family:'Playfair Display', serif, '-apple-system';white-space:pre;shape-inside:url(#rect2041);fill:#000000;fill-opacity:1;stroke:none;"><tspan
          sodipodi:role="line"
          style="visibility:hidden"
          x="167.6543"
-         y="93.64751"><tspan
-           dx="0 27.96875 11.015625">Cle</tspan></tspan></text>
-    <text
-       id="text2047"
-       y="25.039175"
-       x="188.33813"
-       style="font-style:normal;font-weight:bold;font-size:40px;line-height:1.25;font-family:'Playfair Display', serif, -apple-system;inline-size:109.75;fill:#008000;fill-opacity:1;stroke:none"
-       xml:space="preserve"><tspan
-         sodipodi:role="line"
-         style="visibility:hidden"
-         x="188.33813"
-         y="25.039175"><tspan
-           dx="0 27.96875 11.015625 23.828125 24.0625">Clean</tspan></tspan></text>
+         y="92.487812"><tspan
+           dx="0 28.90625 11.09375">Cle</tspan></tspan></text>
   </g>
 </svg>
