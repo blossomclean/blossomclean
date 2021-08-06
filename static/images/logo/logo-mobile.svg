@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="54px"
-   height="54px"
-   viewBox="0 0 54 54"
-   version="1.1"
-   id="svg2106"
+   inkscape:version="1.1-dev (ddb55ca, 2020-02-02)"
    sodipodi:docname="logo-mobile.svg"
-   inkscape:version="1.1-dev (ddb55ca, 2020-02-02)">
+   id="svg2106"
+   version="1.1"
+   viewBox="0 0 192.47185 26.783134"
+   height="26.783134"
+   width="192.47185">
   <metadata
      id="metadata2112">
     <rdf:RDF>
@@ -28,49 +28,50 @@
   <defs
      id="defs2110" />
   <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1011"
-     inkscape:window-height="608"
-     id="namedview2108"
-     showgrid="false"
-     inkscape:zoom="5.037037"
-     inkscape:cx="27"
-     inkscape:cy="27"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="logo-mobile"
+     inkscape:snap-global="true"
      inkscape:snap-bbox="true"
-     inkscape:snap-global="true" />
+     inkscape:current-layer="svg2106"
+     inkscape:window-maximized="0"
+     inkscape:window-y="25"
+     inkscape:window-x="0"
+     inkscape:cy="11.687593"
+     inkscape:cx="96.861961"
+     inkscape:zoom="5.037037"
+     showgrid="false"
+     id="namedview2108"
+     inkscape:window-height="785"
+     inkscape:window-width="1383"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#1e7868"
+     pagecolor="#ffffff" />
   <title
      id="title2099">logo-mobile</title>
   <g
-     id="Page-1"
-     stroke="none"
-     stroke-width="1"
+     transform="translate(-5.3197375,-15.312407)"
+     fill-rule="evenodd"
      fill="none"
-     fill-rule="evenodd">
+     stroke-width="1"
+     stroke="none"
+     id="Page-1">
     <g
        id="logo-mobile">
       <text
-         xml:space="preserve"
-         style="font-size:34.4983px;line-height:1.25;font-family:'Playfair Display', serif, -apple-system;word-spacing:0px;stroke-width:0.862455"
-         x="5.2406321"
-         y="37.019917"
+         transform="scale(0.89183097,1.1212887)"
          id="text2116"
-         transform="scale(0.89183097,1.1212887)"><tspan
-           sodipodi:role="line"
-           id="tspan2114"
-           x="5.2406321"
+         y="37.019917"
+         x="5.2406321"
+         style="font-size:34.4983px;line-height:1.25;font-family:'Playfair Display', serif, '-apple-system';word-spacing:0px;stroke-width:0.862455"
+         xml:space="preserve"><tspan
+           style="font-weight:bold;fill:#008080;stroke-width:0.862455"
            y="37.019917"
-           style="font-weight:bold;fill:#008080;stroke-width:0.862455">BC</tspan></text>
+           x="5.2406321"
+           id="tspan2114"
+           sodipodi:role="line">Blossom Clean</tspan></text>
     </g>
   </g>
 </svg>
