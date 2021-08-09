@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.1-dev (ddb55ca, 2020-02-02)"
-   sodipodi:docname="logo-mobile.svg"
-   id="svg2106"
+   width="142.83949"
+   height="18.444899"
+   viewBox="0 0 142.8395 18.444898"
    version="1.1"
-   viewBox="0 0 163.48656 19.437545"
-   height="19.437546"
-   width="163.48656">
+   id="svg2106"
+   sodipodi:docname="logo-mobile.svg"
+   inkscape:version="1.1-dev (ddb55ca, 2020-02-02)">
   <metadata
      id="metadata2112">
     <rdf:RDF>
@@ -28,50 +28,50 @@
   <defs
      id="defs2110" />
   <sodipodi:namedview
-     inkscape:snap-global="true"
-     inkscape:snap-bbox="true"
-     inkscape:current-layer="svg2106"
-     inkscape:window-maximized="0"
-     inkscape:window-y="25"
-     inkscape:window-x="0"
-     inkscape:cy="6.7243579"
-     inkscape:cx="96.861961"
-     inkscape:zoom="5.037037"
-     showgrid="false"
-     id="namedview2108"
-     inkscape:window-height="785"
-     inkscape:window-width="1383"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
      borderopacity="1"
-     bordercolor="#1e7868"
-     pagecolor="#ffffff" />
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1383"
+     inkscape:window-height="785"
+     id="namedview2108"
+     showgrid="false"
+     inkscape:zoom="5.037037"
+     inkscape:cx="96.861961"
+     inkscape:cy="5.7317112"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2106"
+     inkscape:snap-bbox="true"
+     inkscape:snap-global="true" />
   <title
      id="title2099">logo-mobile</title>
   <g
-     transform="matrix(0.84940502,0,0,0.68867589,-4.5186117,-9.5526385)"
-     fill-rule="evenodd"
-     fill="none"
-     stroke-width="1"
+     id="Page-1"
      stroke="none"
-     id="Page-1">
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     transform="matrix(0.74213188,0,0,0.68867589,-3.9479468,-10.545285)">
     <g
        id="logo-mobile">
       <text
-         transform="scale(0.89183097,1.1212887)"
-         id="text2116"
-         y="37.019917"
-         x="5.2406321"
+         xml:space="preserve"
          style="font-size:34.4983px;line-height:1.25;font-family:'Playfair Display', serif, '-apple-system';word-spacing:0px;stroke-width:0.862455"
-         xml:space="preserve"><tspan
-           style="font-weight:bold;fill:#008080;stroke-width:0.862455"
-           y="37.019917"
-           x="5.2406321"
+         x="5.2406321"
+         y="37.019917"
+         id="text2116"
+         transform="scale(0.89183097,1.1212887)"><tspan
+           sodipodi:role="line"
            id="tspan2114"
-           sodipodi:role="line">Blossom Clean</tspan></text>
+           x="5.2406321"
+           y="37.019917"
+           style="font-weight:bold;fill:#008080;stroke-width:0.862455">Blossom Clean</tspan></text>
     </g>
   </g>
 </svg>
