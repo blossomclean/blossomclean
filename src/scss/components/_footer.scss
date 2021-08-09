@@ -1,7 +1,7 @@
 .footer {
   background: $footer-background-color;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   .footer-inner {
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@
   .footer-title {
     color: #ffffff;
     font-size: 1.3rem;
-    font-family: $font-family-heading;
+    font-family: 'Playfair+Display', serif, -apple-system;
     font-weight: bold;
     margin-bottom: 10px;
     @include media-breakpoint-up(sm) {

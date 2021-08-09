@@ -7,9 +7,6 @@ const Call = props => {
         contactJson {
           phone
           email
-          image
-          image_alt_text
-          qrcode_height
           contact_button_link
         }
     }
@@ -35,10 +32,6 @@ const Call = props => {
         )}
         {data.contactJson.phone && (
           <div className="call-phone">
-            <strong>FB QRCode: </strong>
-            {' '}
-            <img height={data.contactJson.qrcode_height} alt={data.contactJson.image_alt_text} src={data.contactJson.image} />
-            {' '}
           </div>
         )}
       </div>
