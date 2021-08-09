@@ -32,7 +32,7 @@ class Header extends React.Component {
           </div>
           <div className="logo-mobile">
             <Link to="/">
-              <img height={config.logo.desktop_height} alt={config.logo.alt} src={config.logo.mobile} />
+              <img height={config.logo.mobile_height} alt={config.logo.alt} src={config.logo.mobile} />
             </Link>
           </div>
           <MenuMobile active={this.state.menuActive} />
@@ -54,6 +54,7 @@ export default props => (
             desktop
             mobile
             desktop_height
+            mobile_height
           }
         }
       }
