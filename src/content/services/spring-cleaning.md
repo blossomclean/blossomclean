@@ -12,13 +12,13 @@ we are happy to assist in your one-off spring-clean
 ##It's not a regular clean
 If you would like to clean the areas in your house that you don't normally clean, consider:
 
-    - Clean and organise pantry
-    - Fridge clean
-    - Oven clean
-    - Windows clean
-    - Cobweb removed
-    - Skirtings
-    - Detailed cleaning
+- Clean and organise pantry
+- Fridge clean
+- Oven clean
+- Windows clean
+- Cobweb removed
+- Skirtings
+- Detailed cleaning
 
 ## For the peace of mind
 We charge by hours spent, not by effort needed, so book now for an **AUD 27.50 per hour** clean and offer a shiny clean home welcoming your family and friends.

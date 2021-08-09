@@ -12,10 +12,9 @@
   h1 {
     color: $primary;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1.2;
     @include media-breakpoint-up(md) {
-      width: 92%;
       font-size: 28px;
     }
     @include media-breakpoint-up(lg) {
@@ -23,7 +22,6 @@
     }
   }
   h2 {
-    width: 90%;
     font-size: 1.1rem;
     line-height: 1.4;
     margin-bottom: 30px;
@@ -35,9 +33,7 @@
     font-weight: light;
     line-height: 1.5;
     color: $steel;
-    @include media-breakpoint-up(md) {
-      width: 90%;
-    }
+    text-align: justify;
   }
 }
 

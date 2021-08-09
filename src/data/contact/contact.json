@@ -1,8 +1,5 @@
 {
     "email": "blossomclean101@gmail.com",
     "phone": "0450138487",
-    "image": "/images/social/bc-fb-qr.png",
-    "image_alt_text": "Blossom Clean Facebook Page QR Code",
-    "contact_button_link": "contact",
-    "qrcode_height": "136px"
+    "contact_button_link": "contact"
 }
