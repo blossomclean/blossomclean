@@ -10,6 +10,5 @@ You have done all the necessary clean required to vacate the property and now fe
 do carpet steam clean and without that you may not get your bond money back. Don't fret to spend a fortune on carpet
 steam clean as we offer reasonable price with no hidden cost or asking for extra money unnecessarily. 
 
-We charge an **AUD 5 per square meter** of carpeted area with a minimum of **AUD 150** per carpet steam clean. 
-
-Kindly note, the price may vary as per the condition of the carpet. We may charge extra if the condition of the carpet is heavily soiled/odoured, or some stains required additional treatment.
+In order to be completely transparent, and bill only for the time spent including the products and equipment needed for 
+carpet steam cleaning, we charge an **AUD 50 per hour** for a minimum of **2 hours** service. 

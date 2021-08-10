@@ -64,6 +64,12 @@ module.exports = {
           exclude: ["/preview/**", "/do-not-track/me/too/"],
         },
       },
-    }
+    },
+    {
+        resolve: `gatsby-plugin-s3`,
+        options: {
+          bucketName: "blossomclean-web",
+        },
+    },
   ]
 };
