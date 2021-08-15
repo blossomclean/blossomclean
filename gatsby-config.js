@@ -1,13 +1,16 @@
 module.exports = {
   siteMetadata: {
     title: 'Blossom Clean',
-    description: 'Affordable cleaning services provider'
+    description: 'Affordable cleaning services provider',
+    siteUrl: `https://blossomclean.com.au`,
   },
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-transformer-json',
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -68,8 +71,23 @@ module.exports = {
     {
         resolve: `gatsby-plugin-s3`,
         options: {
-          bucketName: "blossomclean-web",
+          bucketName: "blossomclean",
         },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://blossomclean.com.au',
+        sitemap: 'https://blossomclean.com.au/sitemap.xml',
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }]
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }]
+          }
+        }
+      }
     },
   ]
 };
