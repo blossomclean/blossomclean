@@ -1,5 +1,5 @@
-import { useState } from "react";
-import validator from "validator";
+import { useState } from 'react';
+import validator from 'validator';
 
 export const useForm = (options) => {
   const [data, setData] = useState(options?.initialValues || {});
@@ -22,7 +22,7 @@ export const useForm = (options) => {
         valid = false;
         newErrors[key] = validation?.isEmail?.message;
       }
-      if (validation?.isPhone && !validator.isMobilePhone(value, ["en-AU"])) {
+      if (validation?.isPhone && !validator.isMobilePhone(value, ['en-AU'])) {
         valid = false;
         newErrors[key] = validation?.isPhone?.message;
       }
@@ -58,19 +58,22 @@ export const useForm = (options) => {
     event.preventDefault();
     if (validations) {
       for (const key in validations) {
-        const value = data[key] ? data[key] : "";
+        const value = data[key] ? data[key] : '';
         const validation = validations[key];
         validate(key, value, validation);
       }
     }
+
     if (!valid) {
       setErrors(newErrors);
       return;
     }
-    setErrors({});
+
     if (options?.onSubmit) {
-      options.onSubmit();
+      await options.onSubmit();
     }
+
+    setErrors({});
   };
 
   return {
