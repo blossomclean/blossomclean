@@ -2,16 +2,27 @@ import React, { useState } from 'react';
 import { VALIDATIONS } from '../config/validations';
 import { useForm } from '../hooks/useForm';
 import axios from 'axios';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 const Enquiry = () => {
-  const [sendEnquiry, setSendEnquiry] = useState(false);
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState(false);
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
   const sendQuery = async () => {
-    const result = await axios({
-      url: 'http://localhost:8080/query',
-      method: 'post',
-      data: {
-        query: `mutation {
+    if (!executeRecaptcha) {
+      return;
+    }
+    const token = await executeRecaptcha('Enquiry');
+    if (true) {
+      const result = await axios({
+        url: 'http://localhost:8080/query',
+        method: 'post',
+        headers: {
+          'Captcha-Token': token,
+        },
+        data: {
+          query: `mutation {
           createLead(
               input: {
                   firstName: "${data['firstName']}"
@@ -24,10 +35,18 @@ const Enquiry = () => {
               id
           }
       }`,
-      },
-    });
-    if (result?.data?.data?.createLead?.id) {
-      setSendEnquiry(true);
+        },
+      }).catch((error) => {
+        if (error?.response?.status === 400) {
+          setError(true);
+          setMessage(error.response.data);
+        }
+      });
+      if (result?.data?.data?.createLead?.id) {
+        setMessage(
+          'Thanks for sending us your enquiry. We strive to process all enquiries within 48 hours. One of our team member will reach out shortly on the contact details you have filled in the enquiry.'
+        );
+      }
     }
   };
 
@@ -38,13 +57,9 @@ const Enquiry = () => {
 
   return (
     <>
-      {sendEnquiry ? (
+      {message ? (
         <div className="enquiry-form">
-          <span className="thank-you">
-            Thanks for sending us your enquiry. We strive to process all
-            enquiries within 48 hours. One of our team member will reach out
-            shortly on the contact details you have filled in the enquiry.
-          </span>
+          <span className={`thank-you ${error ? 'error' : ''}`}>{message}</span>
         </div>
       ) : (
         <form
