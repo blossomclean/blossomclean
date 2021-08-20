@@ -18,11 +18,11 @@ Serif is a beautiful small business theme for Gatsby. It contains content types 
 
 > Validation rules has been defined inside constant file :- config/validations.js
 
-### How to validation in forms
+### How to Use
 
 - We have implemented a custom hook for form validation **useForm**
 - **useForm** export validation errors, set data, onChange handler and submit handler
-- We need to import **useForm** inside FormCompoent and use error, data and handler to implement validation in any other form
+- You need to import **useForm** inside FormCompoent and use error, data and handler to implement validation in any other form
 - We have used [npm validator](https://www.npmjs.com/package/validator) for validations
 
 <br />
