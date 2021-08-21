@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 
 const Call = props => {
   const data = useStaticQuery(graphql`
@@ -37,7 +37,7 @@ const Call = props => {
       </div>
       {props.showButton && (
         <div className="call-box-bottom">
-          <a href={data.contactJson.contact_button_link} className="button">Contact</a>
+          <Link className="button button-primary" to="/contact/">Contact</Link>
         </div>
       )}
     </div>
