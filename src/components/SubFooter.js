@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import Social from './Social';
 
 const SubFooter = props => {
@@ -28,7 +28,7 @@ const SubFooter = props => {
                 <span>{year}.</span>
                 <span>{data.configJson.footer.rights}</span>
                 {data.configJson.footer.copyright_link && (
-                  <a href={data.configJson.footer.copyright_link}>{data.configJson.footer.copyright_link}</a>
+                  <Link to={data.configJson.footer.copyright_link}>{data.configJson.footer.copyright_link}</Link>
                 )}
               </div>
             </div>

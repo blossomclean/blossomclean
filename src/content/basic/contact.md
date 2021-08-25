@@ -10,7 +10,9 @@ If you like our service, we would appreciate if you can refer our services to yo
 references for our services, happy to provide details once getting consent from our prestigious clients.
 
 ## Working hours
-###Winters (April to October)
+
+### Winters (April to October)
+
 | Day       | Opening Hours   |
 | --------- | --------------- |
 | Monday    | 8:00am - 6:00pm |
@@ -21,7 +23,8 @@ references for our services, happy to provide details once getting consent from 
 | Saturday  | 8:00am - 6:00pm |
 | Sunday    | 8:00am - 6:00pm |
 
-###Summers (November to March)
+### Summers (November to March)
+
 | Day       | Opening Hours   |
 | --------- | --------------- |
 | Monday    | 7:00am - 8:00pm |
@@ -32,5 +35,6 @@ references for our services, happy to provide details once getting consent from 
 | Saturday  | 7:00am - 8:00pm |
 | Sunday    | 7:00am - 8:00pm |
 
-##Reach Us
+## Reach Us
+
 Send your feedback to us @ PO Box 12, Balwyn VIC 3103
