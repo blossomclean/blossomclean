@@ -3,6 +3,7 @@ import { VALIDATIONS } from '../config/validations';
 import { useForm } from '../hooks/useForm';
 import axios from 'axios';
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
+import { MESSAGES } from '../config/messages';
 
 const Enquiry = () => {
   const [message, setMessage] = useState('');
@@ -16,7 +17,7 @@ const Enquiry = () => {
     const token = await executeRecaptcha('Enquiry');
     if (true) {
       const result = await axios({
-        url: 'http://localhost:8080/query',
+        url: `${process.env.BOOK_NOW_API}/query`,
         method: 'post',
         headers: {
           'Captcha-Token': token,
@@ -43,9 +44,7 @@ const Enquiry = () => {
         }
       });
       if (result?.data?.data?.createLead?.id) {
-        setMessage(
-          'Thanks for sending us your enquiry. We strive to process all enquiries within 48 hours. One of our team member will reach out shortly on the contact details you have filled in the enquiry.'
-        );
+        setMessage(MESSAGES.THANKYOU);
       }
     }
   };
