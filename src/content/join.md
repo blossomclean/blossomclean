@@ -11,20 +11,21 @@ If you are reading this, let me first congratulate you that you have come to the
 
 If you have prior experience of domestic help, great! If not, let’s not fret over it and we can create opportunities for you to get the necessary experience and gradually, you will start feeling confident on serving clients on your own. Every job is paid job with us and we respect your hard work and empathise with your life challenges. We are happy to onboard you, even if you give availability of one job a week and we will try to find a job for you near your home or workplace.
 
-###Joining process
+### Joining process
 In order to on board on our sub-contractor panel, we need certain documentation (email at blossomcleaing101@gmail.com), mentioned below:
-    
-    1. Recent Police Check - must have
-    2. Working with children check (Volunteer & Employee) - optional, based on the client need
-    3. Latest CV/Resume
-    4. Identity Proof
-    5. Working rights proof/Visa
-    6. Australian Business Number (ABN) for payments (not needed on day 1 but before the first payment)
-    7. 2 References - Name, Email, Phone
-    8. Emergency contact details - Name, Email, Phone
-    9. Current & Permanent Address
-    10. Bank account details for payment
-    11. Signed Blossom Clean Contract (Will be provided for signature later)
+<p>    
+1. Recent Police Check - must have<br/>
+2. Working with children check (Volunteer & Employee) - optional, based on the client need<br/>
+3. Latest CV/Resume<br/>
+4. Identity Proof<br/>
+5. Working rights proof/Visa<br/>
+6. Australian Business Number (ABN) for payments (not needed on day 1 but before the first payment)<br/>
+7. 2 References - Name, Email, Phone<br/>
+8. Emergency contact details - Name, Email, Phone<br/>
+9. Current & Permanent Address<br/>
+10. Bank account details for payment<br/>
+11. Signed Blossom Clean Contract (Will be provided for signature later)
+</p>
 
 After on-boarding, we will assign you regular weekly, fortnightly etc. jobs as well as one-off/end of lease cleaning jobs based on your availability & suitability. Once we receive consent, we will share your details with our clients and introduce you. As we also serve NDIS (National Disability Insurance Scheme) clients, you may also need to complete additional online trainings & documentation, if you opt to serve NDIS clients.
 
