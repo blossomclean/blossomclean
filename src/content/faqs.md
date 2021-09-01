@@ -4,10 +4,10 @@ title: 'FAQs'
 
 # Frequently asked questions (FAQs)
 
-###General
+### General
 <div style="color:#1e7868;font-weight:bold">What are your charges and how to pay?</div>
 
-We charge on hourly basis for a minimum of 3 hours booking, its AUD 27.50 per hour + 10% GST. We recommend to assign other 
+We charge on hourly basis for a minimum of 3 hours booking, its AUD 27.50 per hour per person + 10% GST. We recommend to assign other 
 additional household tasks if there is time left from the allocated 3 hours booking.
 You can pay cash to the cleaner or electronically transfer funds to our company account:
 **BSB:  013215, Account number: 417767389, Bank: ANZ**
@@ -110,7 +110,7 @@ We appreciate word of mouth publicity, we get so many clients due to amazing rec
 hard work of our team members. Please feel free to provide our contact details and we promise you the best possible
 experience to them.
 
-###Spring cleaning
+### Spring cleaning
 <div style="color:#1e7868;font-weight:bold">What all you cover in Spring cleaning?</div>
 
 We cover everything listed on our Spring clean service page. No work is small or out of our list if it is not a health
@@ -120,13 +120,13 @@ and safety concern to our valued team members.
 
 In order to get the best results, we recommend booking 2-3 small sessions over one big session.
 
-###Office cleaning
+### Office cleaning
 <div style="color:#1e7868;font-weight:bold">Have you done office cleaning before?</div>
 
 Yes, we have experienced cleaners who regularly clean offices. For the first clean, tell us the routine, and we will 
 follow the same for every clean (before or after office hours).
 
-###End of lease cleaning
+### End of lease cleaning
 <div style="color:#1e7868;font-weight:bold">Have you done end of lease cleaning before?</div>
 
 We have so many happy customers to list who got their bond money back without any issue.
@@ -141,7 +141,7 @@ We strive to cover all accessible parts and do a deep clean everywhere.
 We charge hourly, if you choose to provide products and equipments for the clean and also wants to clean alongside. For
 a package based service, please feel free to call us to discuss.
 
-###Carpet steam cleaning
+### Carpet steam cleaning
 <div style="color:#1e7868;font-weight:bold">Do you do carpet steam cleaning?</div>
 
 Yes we do carpet steam cleaning for a reasonable price.
@@ -151,7 +151,7 @@ Yes we do carpet steam cleaning for a reasonable price.
 We would try to remove all stains from the carpet but sometimes, due to the nature of stain, we may not be able to get
 rid of stains
 
-###Babysitting/Nanny services
+### Babysitting/Nanny services
 <div style="color:#1e7868;font-weight:bold">Will the babysitter be having police and working with children checks (WWCC)?</div>
 
 Most definitely, yes. All our team members for babysitting/nanny services are police checked and having WWCC.
