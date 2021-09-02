@@ -6,10 +6,27 @@ import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 import { MESSAGES } from '../config/messages';
 import Contact from './Contact';
 
-const Enquiry = () => {
+const JoinUs = () => {
   const [message, setMessage] = useState('');
   const [error, setError] = useState(false);
   const { executeRecaptcha } = useGoogleReCaptcha();
+  const [resume, setResume] = useState('Upload Resume');
+  const [police, setPolice] = useState('Upload Police Check');
+
+  const uploadFile = (e) => {
+    const name = e.target.files[0].name;
+    switch (e.target.id) {
+      case 'resume':
+        setResume(name);
+        break;
+      case 'police':
+        setPolice(name);
+        break;
+      default:
+        setResume(resume);
+        setPolice(police);
+    }
+  };
 
   const sendQuery = async () => {
     if (!executeRecaptcha) {
@@ -68,21 +85,60 @@ const Enquiry = () => {
         >
           <Contact data={data} errors={errors} handleChange={handleChange} />
           <div className="input-group">
+            <div className="upload">
+              <label class="upload-button" for="resume">
+                {resume}
+                <input
+                  accept=".doc,.docx,.pdf"
+                  id="resume"
+                  type="file"
+                  onChange={uploadFile}
+                />
+              </label>
+            </div>
+          </div>
+          <div className="input-group">
+            <div className="upload">
+              <label class="upload-button" for="police">
+                {police}
+                <input
+                  accept=".doc,.docx,.pdf"
+                  id="police"
+                  type="file"
+                  onChange={uploadFile}
+                />
+              </label>
+            </div>
+          </div>
+          <div className="input-group">
+            <div className="upload">
+              <label class="upload-button" for="police">
+                Identity Proof*
+                <input
+                  accept=".doc,.docx,.pdf"
+                  id="police"
+                  type="file"
+                  onChange={uploadFile}
+                />
+              </label>
+            </div>
+          </div>
+          <div className="input-group">
             <textarea
-              name="enquiry"
+              name="message"
               value={data.enquiry || ''}
-              onChange={handleChange('enquiry')}
+              onChange={handleChange('message')}
               className="form-control"
-              placeholder="Enquiry"
+              placeholder="Tell us about your self"
               required
             />
-            {errors.enquiry && <div className="error">{errors.enquiry}</div>}
+            {errors.message && <div className="error">{errors.message}</div>}
           </div>
           <div className="enquiry-footer">
             <input
               className="button button-primary"
               type="submit"
-              value="Send enquiry"
+              value="Join Us"
             />
           </div>
         </form>
@@ -91,4 +147,4 @@ const Enquiry = () => {
   );
 };
 
-export default Enquiry;
+export default JoinUs;
