@@ -31,10 +31,13 @@ Serif is a beautiful small business theme for Gatsby. It contains content types 
 ## Google ReCaptcha V3
 
 - First thing to use Google ReCaptcha, your domain need to be register on [Google Recaptcha site](https://developers.google.com/recaptcha/docs/v3)
-- After registration you will get Public Site Key and Secret Key, these key will be used in configuration of Recaptcha.
+- After registration, you will get Public Site Key and Secret Key, these key will be used in configuration of Recaptcha.
 - After that you can follow this [Link](https://alphonso-javier.medium.com/how-to-use-recaptcha-v3-with-gatsbyjs-and-express-2e963575db60) for configuration at client and server side.
 
 ### we have added Google recaptcha on form submission to protects our site from spam and Bots
+
+### Google places API on address field
+https://openbase.com/js/react-google-autocomplete
 
 ## Theme features
 

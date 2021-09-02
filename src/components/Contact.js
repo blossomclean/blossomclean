@@ -1,4 +1,5 @@
 import React from 'react';
+import AutoComplete from "react-google-autocomplete";
 
 const Contact = ({ data, errors, handleChange }) => {
   return (
@@ -50,6 +51,16 @@ const Contact = ({ data, errors, handleChange }) => {
           required
         />
         {errors.phone && <div className="error">{errors.phone}</div>}
+      </div>
+      <div className="input-group">
+          <AutoComplete className={`form-control ${errors.phone && 'input-error'}`}
+            apiKey={`${process.env.GOOGLE_PLACES_API_KEY}`}
+            onPlaceSelected={(place) => console.log(place)}
+            options={{
+                types: ["geocode"],
+                componentRestrictions: { country: "au" },
+            }}
+          />
       </div>
     </>
   );
