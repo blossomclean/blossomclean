@@ -38,4 +38,26 @@
     font-size: 16px;
     @include error;
   }
+  .upload {
+    display: block;
+    position: relative;
+    input[type='file'] {
+      position: absolute;
+      z-index: -1;
+      top: 6px;
+      left: 0px;
+      font-size: 15px;
+      color: rgb(153, 153, 153);
+    }
+    .upload-button {
+      display: inline-block;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      background-color: $white-offset;
+      font-size: 16px;
+      color: $primary;
+      border: 1px solid;
+    }
+  }
 }
