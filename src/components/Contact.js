@@ -53,9 +53,9 @@ const Contact = ({ data, errors, handleChange }) => {
         {errors.phone && <div className="error">{errors.phone}</div>}
       </div>
       <div className="input-group">
-          <AutoComplete className={`form-control ${errors.phone && 'input-error'}`}
+          <AutoComplete name="address" id="address" className={`form-control`}
             apiKey={`${process.env.GOOGLE_PLACES_API_KEY}`}
-            onPlaceSelected={(place) => console.log(place)}
+            onPlaceSelected={(place) => document.getElementById('address').value = place?.formatted_address}
             options={{
                 types: ["geocode"],
                 componentRestrictions: { country: "au" },

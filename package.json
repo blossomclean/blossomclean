@@ -7,7 +7,7 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
-    "deploy": "gatsby-plugin-s3 deploy"
+    "deploy": "npx -n \"-r dotenv/config\" gatsby-plugin-s3 deploy"
   },
   "dependencies": {
     "gatsby": "^3.11.1",
