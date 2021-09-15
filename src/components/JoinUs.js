@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 import { MESSAGES } from '../config/messages';
 import Contact from './Contact';
+import GoogleLogin from "./GoogleButton";
 
 const JoinUs = () => {
   const [message, setMessage] = useState('');
@@ -83,6 +84,8 @@ const JoinUs = () => {
           onSubmit={handleSubmit}
           noValidate="noValidate"
         >
+          <GoogleLogin />
+          <div>&nbsp;</div>
           <Contact data={data} errors={errors} handleChange={handleChange} />
           <div className="input-group">
             <div className="upload">
