@@ -1,5 +1,5 @@
 import React from 'react';
-import AutoComplete from "react-google-autocomplete";
+import AutoComplete from 'react-google-autocomplete';
 
 const Contact = ({ data, errors, handleChange }) => {
   return (
@@ -53,14 +53,21 @@ const Contact = ({ data, errors, handleChange }) => {
         {errors.phone && <div className="error">{errors.phone}</div>}
       </div>
       <div className="input-group">
-          <AutoComplete name="address" id="address" className={`form-control`}
-            apiKey={`${process.env.GOOGLE_PLACES_API_KEY}`}
-            onPlaceSelected={(place) => document.getElementById('address').value = place?.formatted_address}
-            options={{
-                types: ["geocode"],
-                componentRestrictions: { country: "au" },
-            }}
-          />
+        <AutoComplete
+          name="address"
+          id="address"
+          className={`form-control`}
+          onChange={handleChange('address')}
+          apiKey="AIzaSyC9PS9tyDUyFFgm-vKqpxGqm8LGCTqaerk"
+          onPlaceSelected={(place) =>
+            (document.getElementById('address').value =
+              place?.formatted_address)
+          }
+          options={{
+            types: ['geocode'],
+            componentRestrictions: { country: 'au' },
+          }}
+        />
       </div>
     </>
   );

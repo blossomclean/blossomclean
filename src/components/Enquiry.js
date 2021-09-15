@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { VALIDATIONS } from '../config/validations';
 import { useForm } from '../hooks/useForm';
+import { useCompany } from '../hooks/useCompany';
 import axios from 'axios';
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 import { MESSAGES } from '../config/messages';
@@ -10,6 +11,7 @@ const Enquiry = () => {
   const [message, setMessage] = useState('');
   const [error, setError] = useState(false);
   const { executeRecaptcha } = useGoogleReCaptcha();
+  const { isError, companyId } = useCompany();
 
   const sendQuery = async () => {
     if (!executeRecaptcha) {
@@ -25,13 +27,15 @@ const Enquiry = () => {
       },
       data: {
         query: `mutation {
-          createLead(
+          saveMessage(
               input: {
                   firstName: "${data['firstName']}"
                   lastName: "${data['lastName']}"
                   email: "${data['email']}"
                   phone: "${data['phone']}"
                   description: "${data['enquiry']}"
+                  address: "${data['address']}"
+                  companyId: ${companyId}
               }
           ) {
               id
@@ -44,7 +48,7 @@ const Enquiry = () => {
         setMessage(error.response.data);
       }
     });
-    if (result?.data?.data?.createLead?.id) {
+    if (result?.data?.data?.saveMessage?.id) {
       setMessage(MESSAGES.THANKYOU);
     }
   };

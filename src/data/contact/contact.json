@@ -1,5 +1,13 @@
 {
+    "name": "Blossom Clean",
     "email": "blossomclean101@gmail.com",
     "phone": "0450138487",
-    "contact_button_link": "contact"
+    "residentialAddress": "PO Box 12 Balwyn VIC 3103",
+    "websiteAddress": "https://blossomclean.com.au/",
+    "contact_button_link": "contact",
+    "contactPersonFirstName": "Sarita",
+    "contactPersonLastName": "Singh",
+    "contactPersonEmail": "saritasingh149@gmail.com",
+    "contactPersonPhone": "0450138487",
+    "contactPersonAddress": "14 Tivey Parade, Balwyn VIC, Australia"
 }
