@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { GoogleLogin, GoogleLogout } from "react-google-login";
+import React, { Component } from 'react';
+import { GoogleLogin, GoogleLogout } from 'react-google-login';
 
 const CLIENT_ID = `${process.env.GOOGLE_OAUTH2_CLIENT_ID}`;
 
@@ -9,20 +9,24 @@ class GoogleLoginComponent extends Component {
     this.state = {
       isLoggedIn: false,
       userInfo: {
-        name: "",
-        emailId: "",
+        name: '',
+        emailId: '',
       },
     };
   }
 
   // Success Handler
   responseGoogleSuccess = (response) => {
-    console.log();
     let userInfo = {
       name: response.profileObj.name,
       emailId: response.profileObj.email,
     };
     this.setState({ userInfo, isLoggedIn: true });
+    this.props.setGoogleUserInfo({
+      firstName: response.profileObj.givenName,
+      lastName: response.profileObj.familyName,
+      email: response.profileObj.email,
+    });
   };
 
   // Error Handler
@@ -34,10 +38,11 @@ class GoogleLoginComponent extends Component {
   logout = (response) => {
     console.log(response);
     let userInfo = {
-      name: "",
-      emailId: "",
+      name: '',
+      emailId: '',
     };
     this.setState({ userInfo, isLoggedIn: false });
+    this.props.setGoogleUserInfo({});
   };
 
   render() {
@@ -49,7 +54,7 @@ class GoogleLoginComponent extends Component {
               <h1>Welcome, {this.state.userInfo.name}</h1>
               <GoogleLogout
                 clientId={CLIENT_ID}
-                buttonText={"Logout"}
+                buttonText={'Logout'}
                 onLogoutSuccess={this.logout}
               ></GoogleLogout>
             </div>
@@ -60,7 +65,7 @@ class GoogleLoginComponent extends Component {
               onSuccess={this.responseGoogleSuccess}
               onFailure={this.responseGoogleError}
               isSignedIn={true}
-              cookiePolicy={"single_host_origin"}
+              cookiePolicy={'single_host_origin'}
             />
           )}
         </div>

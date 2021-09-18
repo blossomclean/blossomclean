@@ -1,7 +1,7 @@
 import React from 'react';
 import AutoComplete from 'react-google-autocomplete';
 
-const Contact = ({ data, errors, handleChange }) => {
+const Contact = ({ data, errors, handleChange, emailReadOnly }) => {
   return (
     <>
       <div className="input-group">
@@ -37,6 +37,7 @@ const Contact = ({ data, errors, handleChange }) => {
           className={`form-control ${errors.email && 'input-error'}`}
           placeholder="Email*"
           required
+          readOnly={emailReadOnly}
         />
         {errors.email && <div className="error">{errors.email}</div>}
       </div>
@@ -55,14 +56,11 @@ const Contact = ({ data, errors, handleChange }) => {
       <div className="input-group">
         <AutoComplete
           name="address"
-          id="address"
           className={`form-control`}
+          value={data.address || ''}
           onChange={handleChange('address')}
-          apiKey="AIzaSyC9PS9tyDUyFFgm-vKqpxGqm8LGCTqaerk"
-          onPlaceSelected={(place) =>
-            (document.getElementById('address').value =
-              place?.formatted_address)
-          }
+          apiKey={process.env.GOOGLE_PLACES_API_KEY}
+          onPlaceSelected={handleChange('address')}
           options={{
             types: ['geocode'],
             componentRestrictions: { country: 'au' },

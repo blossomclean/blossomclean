@@ -4,7 +4,7 @@ import contact from '../data/contact/contact.json';
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 export const useCompany = () => {
-  const [company, setCompany] = useState(0);
+  const [companyId, setCompanyId] = useState(0);
   const [isError, setError] = useState(false);
   const { executeRecaptcha } = useGoogleReCaptcha();
 
@@ -46,7 +46,7 @@ export const useCompany = () => {
       }
     });
     if (result?.data?.data?.createCompany?.id) {
-      setCompany(result.data.data.createCompany.id);
+      setCompanyId(result.data.data.createCompany.id);
     }
   };
 
@@ -56,6 +56,6 @@ export const useCompany = () => {
 
   return {
     isError,
-    company,
+    companyId,
   };
 };

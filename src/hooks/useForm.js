@@ -2,7 +2,7 @@ import { useState } from 'react';
 import validator from 'validator';
 
 export const useForm = (options) => {
-  const [data, setData] = useState(options?.initialValues || {});
+  const [data, setData] = useState(options.initialValues || {});
   const [errors, setErrors] = useState({});
 
   const validations = options?.validations;
@@ -40,12 +40,18 @@ export const useForm = (options) => {
   };
 
   const handleChange = (key) => (event) => {
-    const value = event.target.value;
+    let value = '';
+    if (key === 'address') {
+      value = event.formatted_address || '';
+    } else {
+      value = event.target.value || '';
+    }
     const validation = validations[key];
     validate(key, value, validation);
-    setData({
-      ...data,
-      [key]: value,
+    setData((prevState) => {
+      const data = { ...prevState };
+      data[key] = value;
+      return data;
     });
     if (!valid) {
       setErrors(newErrors);

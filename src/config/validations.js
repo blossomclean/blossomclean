@@ -58,5 +58,11 @@ export const VALIDATIONS = {
         message: 'Enquiry max length is 250',
       },
     },
+    address: {
+      isRequired: {
+        value: true,
+        message: 'Address is required',
+      },
+    },
   },
 };
