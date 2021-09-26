@@ -40,12 +40,7 @@ export const useForm = (options) => {
   };
 
   const handleChange = (key) => (event) => {
-    let value = '';
-    if (key === 'address') {
-      value = event.formatted_address || '';
-    } else {
-      value = event.target.value || '';
-    }
+    const value = event?.target?.value;
     const validation = validations[key];
     validate(key, value, validation);
     setData((prevState) => {
@@ -58,6 +53,18 @@ export const useForm = (options) => {
       return;
     }
     setErrors({});
+  };
+
+  const handleSelection = (key) => (event) => {
+    let value = '';
+    if (key === 'address') {
+      value = event.formatted_address || '';
+    }
+    setData((prevState) => {
+      const data = { ...prevState };
+      data[key] = value;
+      return data;
+    });
   };
 
   const handleSubmit = async (event) => {
@@ -84,8 +91,9 @@ export const useForm = (options) => {
 
   return {
     data,
+    errors,
     handleChange,
     handleSubmit,
-    errors,
+    handleSelection,
   };
 };

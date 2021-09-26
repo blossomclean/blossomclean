@@ -10,13 +10,6 @@ import Contact from './Contact';
 const Enquiry = () => {
   const [message, setMessage] = useState('');
   const [error, setError] = useState(false);
-  const [contactData, setContact] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    address: '',
-  });
   const { executeRecaptcha } = useGoogleReCaptcha();
   const { isError, companyId } = useCompany();
 
@@ -60,11 +53,12 @@ const Enquiry = () => {
     }
   };
 
-  const { handleSubmit, handleChange, data, errors } = useForm({
-    validations: VALIDATIONS.ENQUIRY,
-    initialValues: contactData,
-    onSubmit: sendQuery,
-  });
+  const { handleSubmit, handleChange, handleSelection, data, errors } = useForm(
+    {
+      validations: VALIDATIONS.ENQUIRY,
+      onSubmit: sendQuery,
+    }
+  );
 
   return (
     <>
@@ -78,7 +72,12 @@ const Enquiry = () => {
           onSubmit={handleSubmit}
           noValidate="noValidate"
         >
-          <Contact data={data} errors={errors} handleChange={handleChange} />
+          <Contact
+            data={data}
+            errors={errors}
+            handleChange={handleChange}
+            handleSelection={handleSelection}
+          />
           <div className="input-group">
             <textarea
               name="enquiry"

@@ -8,18 +8,21 @@ import Contact from './Contact';
 import GoogleLogin from './GoogleButton';
 import { useGoogleLogout } from 'react-google-login';
 import { useCompany } from '../hooks/useCompany';
+import UploadFile from './UploadFile';
 
 const JoinUs = () => {
   const [message, setMessage] = useState('');
   const [error, setError] = useState(false);
+  const [files, setFiles] = useState([]);
   const { executeRecaptcha } = useGoogleReCaptcha();
   const [resume, setResume] = useState('Upload Resume');
   const [police, setPolice] = useState('Upload Police Check');
+  const [identityProof, setIdentityProof] = useState('Upload Identity Proof');
   const [contactData, setContactData] = useState({});
-  const { isError, companyId } = useCompany();
+  const { companyId } = useCompany();
   const CLIENT_ID = `${process.env.GOOGLE_OAUTH2_CLIENT_ID}`;
 
-  const { signOut, loaded } = useGoogleLogout({
+  const { signOut } = useGoogleLogout({
     jsSrc: '',
     onFailure: () => {},
     clientId: CLIENT_ID,
@@ -35,8 +38,9 @@ const JoinUs = () => {
     onLogoutSuccess: () => {},
   });
 
-  const uploadFile = (e) => {
-    const name = e.target.files[0].name;
+  const onUpload = (e) => {
+    const file = e.target.files[0];
+    const name = file.name;
     switch (e.target.id) {
       case 'resume':
         setResume(name);
@@ -44,10 +48,44 @@ const JoinUs = () => {
       case 'police':
         setPolice(name);
         break;
+      case 'identityProof':
+        setIdentityProof(name);
+        break;
       default:
-        setResume(resume);
-        setPolice(police);
     }
+    files.push(file);
+    setFiles([...files]);
+  };
+
+  const buildInputs = () => {
+    const formData = new FormData();
+    formData.append(
+      'operations',
+      `{ "query": "mutation ($input: MessageInput!) { saveMessage(input: $input) { id } }", "variables": { "input": { "firstName": "${contactData.firstName}",
+                "lastName": "${contactData.lastName}",
+                "email": "${contactData.email}",
+                "phone": "${contactData.phone}",
+                "description": "${contactData.enquiry}",
+                "address": "${contactData.address}",
+                "companyId": ${companyId},
+                "files": [null, null, null]
+              }
+            } 
+       }`
+    );
+    const map = {
+      0: ['variables.input.files.0'],
+      1: ['variables.input.files.1'],
+      2: ['variables.input.files.2'],
+    };
+    formData.append('map', JSON.stringify(map));
+    formData.append('0', files[0]);
+    formData.append('1', files[1]);
+    formData.append('2', files[2]);
+    // files.forEach((file, index) => {
+    //   formData.append(`${index}`, file);
+    // });
+    return formData;
   };
 
   const sendQuery = async () => {
@@ -55,6 +93,7 @@ const JoinUs = () => {
       return;
     }
     const token = await executeRecaptcha('JoinUs');
+    const dataInput = buildInputs();
     const result = await axios({
       url: `${process.env.BOOK_NOW_API}/query`,
       method: 'post',
@@ -62,23 +101,7 @@ const JoinUs = () => {
         'Captcha-Token': token,
         'Form-Submit': 'JoinUs',
       },
-      data: {
-        query: `mutation {
-          saveMessage(
-              input: {
-                  firstName: "${contactData.firstName}"
-                  lastName: "${contactData.lastName}"
-                  email: "${contactData.email}"
-                  phone: "${contactData.phone}"
-                  description: "${contactData.enquiry}"
-                  address: "${contactData.address}"
-                  companyId: ${companyId}
-              }
-          ) {
-              id
-          }
-      }`,
-      },
+      data: dataInput,
     }).catch((error) => {
       if (error?.response?.status === 400) {
         setError(true);
@@ -91,10 +114,12 @@ const JoinUs = () => {
     }
   };
 
-  const { handleSubmit, handleChange, data, errors } = useForm({
-    validations: VALIDATIONS.ENQUIRY,
-    onSubmit: sendQuery,
-  });
+  const { handleSubmit, handleChange, handleSelection, data, errors } = useForm(
+    {
+      validations: VALIDATIONS.ENQUIRY,
+      onSubmit: sendQuery,
+    }
+  );
 
   const setGoogleUserInfo = (userInfo) => {
     data.firstName = userInfo.firstName;
@@ -125,47 +150,16 @@ const JoinUs = () => {
             data={contactData}
             errors={errors}
             handleChange={handleChange}
+            handleSelection={handleSelection}
             emailReadOnly
           />
-          <div className="input-group">
-            <div className="upload">
-              <label className="upload-button" htmlFor="resume">
-                {resume}
-                <input
-                  accept=".doc,.docx,.pdf"
-                  id="resume"
-                  type="file"
-                  onChange={uploadFile}
-                />
-              </label>
-            </div>
-          </div>
-          <div className="input-group">
-            <div className="upload">
-              <label className="upload-button" htmlFor="police">
-                {police}
-                <input
-                  accept=".doc,.docx,.pdf"
-                  id="police"
-                  type="file"
-                  onChange={uploadFile}
-                />
-              </label>
-            </div>
-          </div>
-          <div className="input-group">
-            <div className="upload">
-              <label className="upload-button" htmlFor="police">
-                Identity Proof*
-                <input
-                  accept=".doc,.docx,.pdf"
-                  id="police"
-                  type="file"
-                  onChange={uploadFile}
-                />
-              </label>
-            </div>
-          </div>
+          <UploadFile id="resume" fileName={resume} onUpload={onUpload} />
+          <UploadFile id="police" fileName={police} onUpload={onUpload} />
+          <UploadFile
+            id="identityProof"
+            fileName={identityProof}
+            onUpload={onUpload}
+          />
           <div className="input-group">
             <textarea
               name="enquiry"
