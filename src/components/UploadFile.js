@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const UploadFile = ({ id, fileName, onUpload }) => {
+const UploadFile = ({ id, fileName, onUpload, errors }) => {
   return (
     <div className="input-group">
       <div className="upload">
@@ -15,6 +15,7 @@ const UploadFile = ({ id, fileName, onUpload }) => {
             onChange={onUpload}
           />
         </label>
+        {errors?.[id] && <div className="error">{errors?.[id]}</div>}
       </div>
     </div>
   );

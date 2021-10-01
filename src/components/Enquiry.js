@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { VALIDATIONS } from '../config/validations';
+import { ENQUIRY } from '../config/validations';
 import { useForm } from '../hooks/useForm';
 import { useCompany } from '../hooks/useCompany';
 import axios from 'axios';
@@ -27,7 +27,7 @@ const Enquiry = () => {
       },
       data: {
         query: `mutation {
-          saveMessage(
+          saveEnquiry(
               input: {
                   firstName: "${data['firstName']}"
                   lastName: "${data['lastName']}"
@@ -48,14 +48,14 @@ const Enquiry = () => {
         setMessage(error.response.data);
       }
     });
-    if (result?.data?.data?.saveMessage?.id) {
+    if (result?.data?.data?.saveEnquiry?.id) {
       setMessage(MESSAGES.THANKYOU);
     }
   };
 
   const { handleSubmit, handleChange, handleSelection, data, errors } = useForm(
     {
-      validations: VALIDATIONS.ENQUIRY,
+      validations: ENQUIRY,
       onSubmit: sendQuery,
     }
   );

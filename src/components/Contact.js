@@ -72,6 +72,7 @@ const Contact = ({
             componentRestrictions: { country: 'au' },
           }}
         />
+        {errors.address && <div className="error">{errors.address}</div>}
       </div>
     </>
   );

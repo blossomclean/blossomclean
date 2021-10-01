@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
-import { VALIDATIONS } from '../config/validations';
+import { JOIN_US } from '../config/validations';
 import { useForm } from '../hooks/useForm';
 import { MESSAGES } from '../config/messages';
 import Contact from './Contact';
@@ -15,9 +15,9 @@ const JoinUs = () => {
   const [error, setError] = useState(false);
   const [files, setFiles] = useState([]);
   const { executeRecaptcha } = useGoogleReCaptcha();
-  const [resume, setResume] = useState('Upload Resume');
-  const [police, setPolice] = useState('Upload Police Check');
-  const [identityProof, setIdentityProof] = useState('Upload Identity Proof');
+  const [resume, setResume] = useState('Upload Resume*');
+  const [police, setPolice] = useState('Upload Police Check*');
+  const [identityProof, setIdentityProof] = useState('Upload Identity Proof*');
   const [contactData, setContactData] = useState({});
   const { companyId } = useCompany();
   const CLIENT_ID = `${process.env.GOOGLE_OAUTH2_CLIENT_ID}`;
@@ -41,6 +41,7 @@ const JoinUs = () => {
   const onUpload = (e) => {
     const file = e.target.files[0];
     const name = file.name;
+    handleFileUpload(e);
     switch (e.target.id) {
       case 'resume':
         setResume(name);
@@ -61,7 +62,10 @@ const JoinUs = () => {
     const formData = new FormData();
     formData.append(
       'operations',
-      `{ "query": "mutation ($input: MessageInput!) { saveMessage(input: $input) { id } }", "variables": { "input": { "firstName": "${contactData.firstName}",
+      `{ "query": "mutation ($input: MessageInput!) { saveMessage(input: $input) { id } }", 
+        "variables": { 
+          "input": { 
+                "firstName": "${contactData.firstName}",
                 "lastName": "${contactData.lastName}",
                 "email": "${contactData.email}",
                 "phone": "${contactData.phone}",
@@ -79,12 +83,10 @@ const JoinUs = () => {
       2: ['variables.input.files.2'],
     };
     formData.append('map', JSON.stringify(map));
-    formData.append('0', files[0]);
-    formData.append('1', files[1]);
-    formData.append('2', files[2]);
-    // files.forEach((file, index) => {
-    //   formData.append(`${index}`, file);
-    // });
+
+    files.forEach((file, index) => {
+      formData.append(`${index}`, file);
+    });
     return formData;
   };
 
@@ -114,12 +116,17 @@ const JoinUs = () => {
     }
   };
 
-  const { handleSubmit, handleChange, handleSelection, data, errors } = useForm(
-    {
-      validations: VALIDATIONS.ENQUIRY,
-      onSubmit: sendQuery,
-    }
-  );
+  const {
+    handleSubmit,
+    handleChange,
+    handleSelection,
+    handleFileUpload,
+    data,
+    errors,
+  } = useForm({
+    validations: JOIN_US,
+    onSubmit: sendQuery,
+  });
 
   const setGoogleUserInfo = (userInfo) => {
     data.firstName = userInfo.firstName;
@@ -153,12 +160,23 @@ const JoinUs = () => {
             handleSelection={handleSelection}
             emailReadOnly
           />
-          <UploadFile id="resume" fileName={resume} onUpload={onUpload} />
-          <UploadFile id="police" fileName={police} onUpload={onUpload} />
+          <UploadFile
+            id="resume"
+            fileName={resume}
+            onUpload={onUpload}
+            errors={errors}
+          />
+          <UploadFile
+            id="police"
+            fileName={police}
+            onUpload={onUpload}
+            errors={errors}
+          />
           <UploadFile
             id="identityProof"
             fileName={identityProof}
             onUpload={onUpload}
+            errors={errors}
           />
           <div className="input-group">
             <textarea

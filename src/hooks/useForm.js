@@ -10,6 +10,10 @@ export const useForm = (options) => {
   const newErrors = {};
 
   const validate = (key, value, validation) => {
+    //check for file
+    if (value.type) {
+      return;
+    }
     if (validation?.isRequired && validator.isEmpty(value)) {
       valid = false;
       newErrors[key] = validation?.isRequired?.message;
@@ -60,9 +64,23 @@ export const useForm = (options) => {
     if (key === 'address') {
       value = event.formatted_address || '';
     }
+    const validation = validations[key];
+    validate(key, value, validation);
     setData((prevState) => {
       const data = { ...prevState };
       data[key] = value;
+      return data;
+    });
+  };
+
+  const handleFileUpload = (event) => {
+    const key = event.target.id;
+    const file = event.target.files[0];
+    const validation = validations[key];
+    validate(key, file, validation);
+    setData((prevState) => {
+      const data = { ...prevState };
+      data[key] = file;
       return data;
     });
   };
@@ -95,5 +113,6 @@ export const useForm = (options) => {
     handleChange,
     handleSubmit,
     handleSelection,
+    handleFileUpload,
   };
 };
