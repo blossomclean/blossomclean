@@ -27,7 +27,7 @@ const Enquiry = () => {
       },
       data: {
         query: `mutation {
-          saveEnquiry(
+          saveMessage(
               input: {
                   firstName: "${data['firstName']}"
                   lastName: "${data['lastName']}"
@@ -48,7 +48,7 @@ const Enquiry = () => {
         setMessage(error.response.data);
       }
     });
-    if (result?.data?.data?.saveEnquiry?.id) {
+    if (result?.data?.data?.saveMessage?.id) {
       setMessage(MESSAGES.THANKYOU);
     }
   };
