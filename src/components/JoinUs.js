@@ -9,8 +9,10 @@ import GoogleLogin from './GoogleButton';
 import { useGoogleLogout } from 'react-google-login';
 import { useCompany } from '../hooks/useCompany';
 import UploadFile from './UploadFile';
+import contact from '../data/contact/contact.json';
 
 const JoinUs = () => {
+  const [saveButtonText, setSaveButtonText] = useState('Join Us');
   const [message, setMessage] = useState('');
   const [error, setError] = useState(false);
   const [files, setFiles] = useState([]);
@@ -72,7 +74,8 @@ const JoinUs = () => {
                 "description": "${contactData.enquiry}",
                 "address": "${contactData.address}",
                 "companyId": ${companyId},
-                "files": [null, null, null]
+                "files": [null, null, null],
+                "companyFolderId": "${contact.googleDriveFolderId}"
               }
             } 
        }`
@@ -94,6 +97,7 @@ const JoinUs = () => {
     if (!executeRecaptcha) {
       return;
     }
+    setSaveButtonText('Saving...');
     const token = await executeRecaptcha('JoinUs');
     const dataInput = buildInputs();
     const result = await axios({
@@ -105,6 +109,7 @@ const JoinUs = () => {
       },
       data: dataInput,
     }).catch((error) => {
+      setSaveButtonText('Join Us');
       if (error?.response?.status === 400) {
         setError(true);
         setMessage(error.response.data);
@@ -193,7 +198,7 @@ const JoinUs = () => {
             <input
               className="button button-primary"
               type="submit"
-              value="Join Us"
+              value={saveButtonText}
             />
           </div>
         </form>
