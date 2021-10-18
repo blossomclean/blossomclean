@@ -1,6 +1,6 @@
 # Blossom Clean
 
-Serif is a beautiful small business theme for Gatsby. It contains content types for the archetypical small business website. The theme is fully responsive, blazing fast and artfully illustrated.
+This website code is for cleaning business. It is built using static site generator - Gatsby.js 
 
 [Live Demo](https://blossomclean.com.au/)
 
