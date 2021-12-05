@@ -1,0 +1,63 @@
+.enquiry-form {
+  background-color: $white-offset;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  width: 100%;
+  padding: 2% 4%;
+  @mixin error {
+    color: red;
+    font-weight: 600;
+    padding: 5px 0 10px 10px;
+  }
+  .input-group {
+    flex-direction: column;
+    margin-bottom: 10px;
+    .input-error {
+      border-color: #ea8080;
+      box-shadow: 0 0 0 0.2rem #f801013d;
+      border-radius: 0.25rem;
+    }
+    .error {
+      font-size: 12px;
+      @include error;
+    }
+  }
+  .enquiry-footer {
+    display: flex;
+    justify-content: flex-end;
+    .button {
+      border: none;
+    }
+  }
+  .thank-you {
+    font-size: 16px;
+    color: $primary;
+    font-weight: 600;
+  }
+  .error {
+    font-size: 16px;
+    @include error;
+  }
+  .upload {
+    display: block;
+    position: relative;
+    input[type='file'] {
+      position: absolute;
+      z-index: -1;
+      top: 6px;
+      left: 0px;
+      font-size: 15px;
+      color: rgb(153, 153, 153);
+    }
+    .upload-button {
+      display: inline-block;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      background-color: $white-offset;
+      font-size: 16px;
+      color: $primary;
+      border: 1px solid;
+    }
+  }
+}

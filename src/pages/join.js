@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
-import Call from '../components/Call';
+import JoinUs from '../components/JoinUs';
 
-const Join = props => {
+const Join = (props) => {
   const join = props.data.join.edges;
   const { intro } = props.data;
 
@@ -18,6 +18,9 @@ const Join = props => {
             <div className="col-12 order-2 order-md-1">
               <div dangerouslySetInnerHTML={{ __html: intro.html }} />
             </div>
+            <div className="col-12 order-2 order-md-1">
+              <JoinUs />
+            </div>
           </div>
         </div>
       </div>
@@ -28,7 +31,7 @@ const Join = props => {
 export const query = graphql`
   query JoinQuery {
     join: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/join\/.*/" } }
+      filter: { fileAbsolutePath: { regex: "/join/.*/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -41,7 +44,7 @@ export const query = graphql`
         }
       }
     }
-    intro: markdownRemark(fileAbsolutePath: {regex: "/(join.md)/"}) {
+    intro: markdownRemark(fileAbsolutePath: { regex: "/(join.md)/" }) {
       html
     }
   }

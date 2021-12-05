@@ -1,8 +1,9 @@
+require("dotenv").config();
 module.exports = {
   siteMetadata: {
     title: 'Blossom Clean',
     description: 'Affordable cleaning services provider',
-    siteUrl: `https://blossomclean.com.au`,
+    siteUrl: `https://www.blossomclean.com.au`,
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -46,7 +47,7 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "G-7YNFF32V3F", // Google Analytics / GA
+          `${process.env.GOOGLE_ANALYTICS_TRACKING_ID}`, // Google Analytics / GA
           "AW-CONVERSION_ID", // Google Ads / Adwords / AW
           "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
@@ -71,7 +72,7 @@ module.exports = {
     {
         resolve: `gatsby-plugin-s3`,
         options: {
-          bucketName: "blossomclean",
+          bucketName: process.env.S3_BUCKET_NAME,
         },
     },
     {
