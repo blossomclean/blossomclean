@@ -7,4 +7,4 @@ intro_image_hide_on_mobile: true
 
 # Buyback time to do awesome things!
 
-Do what you love the most and leave the regular errands to us. Affordable cleaning service (**AUD 27.50 per hour per person + 10% GST**) provider with all the necessary checks (**Police check, WWCC, Work rights, References, Public liability insurance, Experienced**) done for the peace of mind.
+Do what you love the most and leave the regular errands to us. Affordable cleaning service (**AUD 40 per hour per person + 10% GST**) provider with all the necessary checks (**Police check, WWCC, Work rights, References, Public liability insurance, Experienced**) done for the peace of mind.

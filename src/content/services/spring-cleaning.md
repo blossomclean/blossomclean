@@ -21,6 +21,6 @@ If you would like to clean the areas in your house that you don't normally clean
 - Detailed cleaning
 
 ## For the peace of mind
-We charge by hours spent, not by effort needed, so book now for an **AUD 27.50 per hour per person** clean and offer a shiny clean home welcoming your family and friends.
+We charge by hours spent, not by effort needed, so book now for an **AUD 40 per hour per person** clean and offer a shiny clean home welcoming your family and friends.
 
 Kindly note, this is not a regular clean, would be great if you can give us some advance notice beforehand so that we can arrange resources accordingly.

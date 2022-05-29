@@ -7,7 +7,7 @@ title: 'FAQs'
 ### General
 <div style="color:#1e7868;font-weight:bold">What are your charges and how to pay?</div>
 
-We charge on hourly basis for a minimum of 3 hours booking, its AUD 27.50 per hour per person + 10% GST. We recommend to assign other 
+We charge on hourly basis for a minimum of 3 hours booking, its AUD 40 per hour per person + 10% GST. We recommend to assign other 
 additional household tasks if there is time left from the allocated 3 hours booking.
 You can pay cash to the cleaner or electronically transfer funds to our company account:
 **BSB:  013215, Account number: 417767389, Bank: ANZ**
